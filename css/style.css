@@ -1,0 +1,77 @@
+.container.app-container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80dvh;
+    width: 20dvw;
+    color: var(--primary-text-color);
+    white-space: nowrap;
+}
+
+.container.dimensions-container
+{
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+    color: var(--label-text-color);
+}
+
+.container.app-container .container.settings-container
+{
+    margin-top: 50px;
+}
+
+.container.app-container .container.qr-code-container
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 200px;
+    border: 2px solid #fff;
+    margin-top: 50px;
+}
+
+.container.app-container .container.dimensions-input-container
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 130px;
+}
+
+.container.app-container .container.settings-container>div:nth-child(2)
+{
+    margin-top: 20px;
+}
+
+.container.app-container .container.settings-container button
+{
+    font-family: inherit;
+    display: block;
+    margin-top: 30px;
+    background-color: var(--btn-background-color);
+    width: 100%;
+    padding: 10px 20px;
+    color: var(--primary-text-color);
+    font-size: 1rem;
+    border-radius: calc(var(--base-border-radius) / 2);
+    box-shadow: var(--box-shadow);
+    transition: opacity .15s ease-in;
+}
+
+.container.app-container .container.settings-container button:hover
+{
+    opacity: .95;
+    transition: opacity .15s ease-in;
+}
+
+.container.app-container .container.settings-container button:active
+{
+    transform: scale(.98);
+    box-shadow: none;
+    transition: none;
+}
