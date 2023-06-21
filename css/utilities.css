@@ -1,0 +1,15 @@
+:root
+{
+    /* Colors */
+    --body-background-color: #d6f1fa;
+    --primary-text-color: #fff;
+    --label-text-color: #0c670c;
+    --btn-background-color: #0c670c;
+
+    /* Radii */
+    --base-border-radius: 10px;
+
+    /* Shadows */
+    --text-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
