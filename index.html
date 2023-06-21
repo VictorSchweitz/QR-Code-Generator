@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <script src="js/main.js" defer></script>
+    <title>QR Code Generator</title>
+</head>
+
+<body>
+    <div class="container app-container">
+        <div class="container qr-code-info-container">
+            <div class="container qr-code-container" id="qr-code-container"></div>
+
+            <div class="container dimensions-container">
+                <span class="number dimension-number height-dimension-number" id="height-dimension-number">0</span>
+                x
+                <span class="number dimension-number width-dimension-number" id="width-dimension-number">0</span>
+            </div>
+        </div>
+
+        <div class="container settings-container">
+            <div>
+                <label for="dimension-input">Enter dimension (one number only!):</label>
+                <input type="number" class="input dimension-input" id="dimension-input"
+                    placeholder="Number serves as height and width">
+            </div>
+
+            <!-- URL -->
+            <div>
+                <label for="url-input">URL:</label>
+                <input type="url" class="input url-input" id="url-input" placeholder="Enter URL">
+            </div>
+
+            <button class="btn generate-btn generate-qr-code-btn" id="generate-qr-code-btn">Generate QR Code</button>
+        </div>
+</body>
+
+</html>
